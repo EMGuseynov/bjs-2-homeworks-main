@@ -1,5 +1,4 @@
 
-// for commit!!!
 "use strict";
 
 
