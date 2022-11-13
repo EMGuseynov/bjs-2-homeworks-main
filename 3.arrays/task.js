@@ -1,7 +1,8 @@
-function compareArrays(arr1, arr2) {
-  let result;
-  
-  result = JSON.stringify(arr1) === JSON.stringify(arr2);
+function compareArrays (arr1, arr2){
+  let result =  arr1.length === arr2.length && arr1.every((n, i) => n === arr2[i]);
+  return result;
+}
+  // result = JSON.stringify(arr1) === JSON.stringify(arr2);
   
 
   // !!!!!!!!!!!!!!!  РЕШЕНИЕ No2!!!!!!!!!!!!!!
@@ -28,9 +29,6 @@ function compareArrays(arr1, arr2) {
 
 
 
-
-  return result; // boolean
-}
 function advancedFilter(arr) {
   let resultArr;
 
